@@ -1,0 +1,75 @@
+html, body {
+  height:100%;  
+}
+body, div, p {
+  margin:0;
+}
+.container {
+  position: relative;
+  
+}
+
+/* Make the image responsive */
+/* .container img {
+  width: 100%;
+  height: auto;
+} */
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn1 {
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  color: white;
+  font-size: 20px;
+  /* padding: 12px 24px; */
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.container .phonepara{
+  position: absolute;
+  top : 50%;
+  left: 10%;
+  color: white;
+}
+
+.itembucket{
+  border: 2px solid black;  
+  margin : 20px 20px 20px 20px;
+  width: 95%;
+  padding: 20px;
+  -webkit-box-shadow: 0 8px 6px -5px black;
+	-moz-box-shadow: 0 8px 6px -5px black;
+	box-shadow: 0 8px 6px -5px black;
+}
+
+.carde{
+  width : 225px;
+  padding: 20px;
+  background-color: #eeeeee;  
+  border: 2px solid grey;
+  margin: 20px;
+  display: table-cell;
+  align-items: center;
+}
+
+.card-img{
+  width :175px;
+  height : 140px;
+  display: block;
+  margin: 0 auto;
+}
+.buttons { 
+  display: block;
+  margin: 0 auto;
+}
+.card-btn{
+  width : 70px;
+  font-size: 10.5px;  
+}
+
