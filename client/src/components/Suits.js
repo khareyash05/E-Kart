@@ -14,7 +14,8 @@ const Suits = () => {
                         <ClothesCard
                             img = {SuitsList.img}
                             name = {SuitsList.name}
-                            cost = {SuitsList.cost}                        
+                            cost = {SuitsList.cost} 
+                            link  = {SuitsList.link}                       
                         />
                     </>
                 )
@@ -24,7 +25,8 @@ const Suits = () => {
                     <ClothesCard
                     img = {SuitsList.img}
                     name = {SuitsList.name}
-                    cost = {SuitsList.cost}                        
+                    cost = {SuitsList.cost} 
+                    link = {SuitsList.link}                       
                 />   
                 )
             }

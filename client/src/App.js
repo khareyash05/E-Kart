@@ -6,6 +6,8 @@ import Cart from "./components/Cart"
 import Profile from "./components/Profile"
 import Footer from "./components/Footer"
 import Suits from "./components/Suits"
+import TShirt from "./components/TShirt"
+import Sarees from "./components/Sarees"
 import {Route} from "react-router-dom"
 import "./App.css"
 
@@ -29,6 +31,8 @@ function App() {
         <Profile />
       </Route>
       <Route path = "/suits"><Suits/></Route>      
+      <Route path = "/tshirts"><TShirt/></Route>   
+      <Route path = "/sarees"><Sarees/></Route>   
       <Footer/>
     </>
   );

@@ -43,6 +43,12 @@ const SuitsList = [
         name : "BlackBerrys Single Breasted Suit",
         cost  :"₹6,500",
         link :"/suits7"
+    },
+    {
+        img : "https://www.clothingconnectiononline.com/pub/media/wysiwyg/homepage_slider/4-23-2021-Main-T60-Herringbone.jpg",
+        name : "Vintage Brown Suit",
+        cost : "₹4,000",
+        link : "/suits8"
     }
 ]
 
