@@ -8,6 +8,8 @@ import Footer from "./components/Footer"
 import Suits from "./components/Suits"
 import TShirt from "./components/TShirt"
 import Sarees from "./components/Sarees"
+import Jeans from "./components/Jeans"
+import MainCard from "./components/MainCard"
 import {Route} from "react-router-dom"
 import "./App.css"
 
@@ -32,7 +34,20 @@ function App() {
       </Route>
       <Route path = "/suits"><Suits/></Route>      
       <Route path = "/tshirts"><TShirt/></Route>   
-      <Route path = "/sarees"><Sarees/></Route>   
+      <Route path = "/sarees"><Sarees/></Route> 
+      <Route path = "/Jeans"><Jeans/></Route>
+      <Route path = "/tshirts/:id">
+        <MainCard/>
+      </Route>  
+      <Route path = "/suits/:id">
+        <MainCard/>
+      </Route>  
+      <Route path = "/sarees/:id">
+        <MainCard/>
+      </Route>
+      <Route path = "/jeans/:id">
+        <MainCard/>
+      </Route>
       <Footer/>
     </>
   );

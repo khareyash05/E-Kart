@@ -13,7 +13,7 @@ const Clothes = [
     },
     {
         img : "https://5.imimg.com/data5/AL/RS/MY-2325220/men-ankle-length-jeans-500x500.jpg",
-        name : "Denim Jeans",
+        name : "Jeans",
         cost : "Starting from ₹1,500",
         link : "/jeans"
     },
