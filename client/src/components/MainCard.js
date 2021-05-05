@@ -6,7 +6,7 @@ import SuitsList from './data/Suits'
 import TShirtList from "./data/TShirt"
 
 let type = window.location.pathname
-type = type.substring(6,"/")
+type = type.split("/")[1]
 console.log(type);    
 
 const MainCard = () => {
@@ -44,7 +44,7 @@ const MainCard = () => {
     function createCard2(SareesList){
         let id1 = window.location.pathname
         id1 = id1.slice(8)
-        console.log(id1);
+        // console.log(id1);
         if(parseInt(id1)===SareesList.id){
             return(
                 <BuyCard 
@@ -58,8 +58,8 @@ const MainCard = () => {
 
     function createCard3(JeansList){
         let id1 = window.location.pathname
-        // console.log(id1);
-        id1 = id1.slice(6)
+        id1 = id1.slice(7)
+        console.log(id1);
         if(parseInt(id1)===JeansList.id){
             return(
                 <BuyCard 
@@ -71,14 +71,36 @@ const MainCard = () => {
         }  
     }
 
-    return (
-        <div>
-            {TShirtList.map(createCard)}
-            {SuitsList.map(createCard1)}
-            {SareesList.map(createCard2)}
-            {JeansList.map(createCard3)}
-        </div>
-    )
+    if(type === "tshirts"){
+        return(
+            <div>
+                {TShirtList.map(createCard)}
+            </div>
+        )
+    }
+
+    else if(type ==="sarees"){
+        return(
+            <div>
+                {SareesList.map(createCard2)}
+            </div>
+        )
+    }
+
+    else if(type === "suits"){
+        return (
+            <div>
+                {SuitsList.map(createCard1)}
+            </div>
+        )
+    }
+    else {
+        return(
+            <div>
+                {JeansList.map(createCard3)}
+            </div>
+        )
+    }
 }
 
 export default MainCard
