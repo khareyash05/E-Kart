@@ -4,7 +4,8 @@ const TShirtList = [
         img : "https://5.imimg.com/data5/SF/CQ/BZ/SELLER-72687983/coder-t-shirts-programmer-t-shirts-online-in-mumbai-navi-mumbai-india-12--500x500.jpg",
         name : "Eat-Sleep-Code-Repeat",
         cost : "₹500",
-        link : "/tshirts/1"
+        link : "/tshirts/1",
+        description : "Care Instructions: Machine Wash , Fit Type: Regular Fit , 100% Cotton , Colors Available : Blue and Black"
     },
     {
         id : 2,

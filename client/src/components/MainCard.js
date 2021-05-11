@@ -22,6 +22,7 @@ const MainCard = () => {
                     name = {TShirtList.name}
                     img = {TShirtList.img}
                     cost = {TShirtList.cost}
+                    description = {TShirtList.description}
                 />
             )
         }

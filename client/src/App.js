@@ -4,6 +4,7 @@ import Login from "./components/Login"
 import Register from "./components/Register"
 import Cart from "./components/Cart"
 import Profile from "./components/Profile"
+import Checkout from "./components/Checkout"
 import Footer from "./components/Footer"
 import Suits from "./components/Suits"
 import TShirt from "./components/TShirt"
@@ -32,6 +33,7 @@ function App() {
       <Route path = "/profile" >
         <Profile />
       </Route>
+      <Route path = "/checkout"><Checkout/></Route>
       <Route path = "/suits"><Suits/></Route>      
       <Route path = "/tshirts"><TShirt/></Route>   
       <Route path = "/sarees"><Sarees/></Route> 

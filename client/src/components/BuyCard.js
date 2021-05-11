@@ -1,21 +1,30 @@
 import React from 'react'
+import './components.css'
 
 const BuyCard = (props) => {
-    return (
-        <div>
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-lg-6">
-                        <img src = {props.img} alt = ""/>
-                    </div>
-                    <div class = "col-lg-6">
+    return (<div>
+
+            <div class ="container">
+
+                <div class="row" >
+                <div class="col-4" style={{backgroundColor:'green'}}><img src = {props.img} className="buycardimg" alt = ""/></div>
+                <div class="col-8">
+                    <div class="row">
+                    <div class="col-9" style={{marginLeft : 100}}>
                         <h2>{props.name}</h2>
                         <h4><b>{props.cost}</b></h4>
-                        <button class = "btn btn-warning">Buy Now</button>
+                        <h6>Delivered in 4-5 business days</h6>
+                        <br/>
+                        <button class = "btn btn-primary">Buy Now</button><br/>
+                        <br/>
+                        <p>{props.description}</p>
+                    <div class="col-6">
+                    </div>
+                    </div>
                     </div>
                 </div>
+                </div>
             </div>
-            <p>{props.description}</p>
         </div>
     )
 }
