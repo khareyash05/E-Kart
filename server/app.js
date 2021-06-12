@@ -109,4 +109,10 @@ app.get("/profile",authenticate,(req,res)=>{
     res.send(req.rootUser)
 })
 
+app.get("/logout",(req,res)=>{
+    console.log("logged out")
+    res.clearCookie('jwtoken',{path:"/"})
+    res.status(200).send("User Logged Out")
+})
+
 app.listen(5000)

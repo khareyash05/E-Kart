@@ -28,7 +28,10 @@ function Navbar(){
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/profile">My Profile</NavLink>
-                    </li>                
+                    </li>          
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/logout">Logout</NavLink>
+                    </li>       
                 </ul>      
             </div>
         </div>
