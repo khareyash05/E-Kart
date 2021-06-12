@@ -13,7 +13,7 @@ function Card(props){
                     <br/>
                     <div class = "buttons">
                         <a href="/" class="btn card-btn btn-warning"><b>Buy Now</b></a> &nbsp; &nbsp;
-                        <a href="/" style = {{width:80}} class="btn card-btn btn-warning"><b>Add to Cart</b></a>
+                        <a href="/"  class="btn card-btn btn-warning"><b>Add to Cart</b></a>
                     </div>                  
 
                 
