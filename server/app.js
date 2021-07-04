@@ -115,4 +115,6 @@ app.get("/logout",(req,res)=>{
     res.status(200).send("User Logged Out")
 })
 
-app.listen(5000)
+const port = process.env.PORT || 5000
+
+app.listen(port)

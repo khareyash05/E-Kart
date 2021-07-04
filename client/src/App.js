@@ -41,17 +41,17 @@ function App() {
       <Route path = "/suits"><Suits/></Route>      
       <Route path = "/tshirts"><TShirt/></Route>   
       <Route path = "/sarees"><Sarees/></Route> 
-      <Route path = "/Jeans"><Jeans/></Route>
-      <Route path = "/tshirts/:id">
+      <Route path = "/jeans"><Jeans/></Route>
+      <Route exact path = "/tshirts/:id">
         <MainCard/>
       </Route>  
-      <Route path = "/suits/:id">
+      <Route exact path = "/suits/:id">
         <MainCard/>
       </Route>  
-      <Route path = "/sarees/:id">
+      <Route exact path = "/sarees/:id">
         <MainCard/>
       </Route>
-      <Route path = "/jeans/:id">
+      <Route exact path = "/jeans/:id">
         <MainCard/>
       </Route>
       <Footer/>
